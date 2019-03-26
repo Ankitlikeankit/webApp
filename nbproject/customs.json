@@ -1,0 +1,11 @@
+{
+    "elements": {},
+    "attributes": {
+        "aria-expanded": {
+            "context": "a"
+        },
+        "placeholder": {
+            "context": "input"
+        }
+    }
+}

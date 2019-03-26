@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<style type="text/css">
+    body{
+	   background-color:  #cccccc;
+    }
+	.login-form {
+		width: 400px;
+    	margin: 50px auto;
+    	margin-top: 100px;
+	}
+    .login-form form {
+    	margin-bottom: 15px;
+        background: #f7f7f7;
+        height: 400px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        padding: 30px;
+    }
+    .login-form h2 {
+        margin: 0 0 35px;
+    }
+    .form-control, .btn {
+        min-height: 48px;
+        border-radius: 10px;
+    }
+    .btn {        
+        font-size: 15px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<div class="login-form">
+    <form action="login" method="post">
+        <h2 class="text-center">Log in</h2>       
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Email" name="username" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" name="password" required="required">
+        </div>
+        <div class="form-group input-group">
+    			<div class="input-group-prepend">
+		    		<span class="input-group-text"> <i class="fa fa-building"></i> </span>
+				</div>
+                                <select class="form-control" name="usertype">
+					<option selected>user</option>
+					<option>admin</option>
+                                        <option >police</option>
+				</select>
+			</div> 
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+        </div>
+        <div class="clearfix">
+            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+            <a href="#" class="pull-right">Forgot Password?</a>
+        </div>        
+    </form>
+    <p class="text-center"><a href="register.html">Create an Account</a></p>
+</div>
+</body>
+</html>                                		  

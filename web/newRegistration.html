@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>VEHICLE</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <style>
+            .form-content
+            {
+                padding: 5%;
+                margin-right: 5%;
+                margin-bottom: 2%;
+            }
+            .form-control{
+                border-radius:1.5rem;
+            }
+            .btnSubmit
+            {
+                border:none;
+                border-radius:1.5rem;
+                padding: 1%;
+                width: 20%;
+                cursor: pointer;
+                background: #0062cc;
+                color: #fff;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading"></div>
+                <div class="panel-heading panel-danger"><center><h2>New Registration : Data Entry</h2></center></div>
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+                    
+                    <form action="registervehicle" method="post">
+                        <div class="container">
+                            <div class="form-content">
+                                <div class="well well-sm">
+                                    <center>RTO Name</center>        
+                                </div>
+                                <div class="form-group ">
+                                    <center> <select class="form-control"  required name="rtoname" style=" max-width: 320px;">
+					<option disabled selected hidden value=""> --Select RTO name--</option>
+                                        <option value="0">BR01-RTO patna</option>
+                                        <option value="1">BR02-RTO Gaya</option>
+                                        <option value="2">BR03-RTO Aarah</option>
+                                        <option value="3">BR04-RTO Chhapra</option>
+                                        <option value="4">BR05-RTO Motihari</option>
+                                        <option value="5">BR06-RTO Muzaffarpur</option>
+                                        <option value="6">BR07-RTO Darbhanga</option>
+                                        <option value="7">BR08-RTO Munger</option>
+                                        <option value="8">BR09-RTO Begusarai</option>
+                                        <option value="9">BR10-RTO Bhagalpur</option>
+                                        <option value="10">BR11-RTO Purnia</option>
+                                        </select>
+                                    </center>
+                                </div>
+                                
+  <!------------------------------- ownwer details --------------------------------->
+ 
+  
+                                <div class="well well-sm">
+                                    <center>Owner Details</center>        
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="ownername" type="text" class="form-control" placeholder="Owner Name *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="panno" type="text" class="form-control" placeholder="Pan Number " value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="caddress" type="text" class="form-control" placeholder="current address *" value="" required/>
+                                        </div>
+                                       
+                                        <div class="form-group">
+                                            <input name="ccity" type="text" class="form-control" placeholder="city * " value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="cpincode" class="form-control" placeholder="pincode *"  required value=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="dname" required>
+                                                    <option disabled selected hidden value=""> --Dealer Name--</option>
+                                                    <option>2-wheeler</option>
+                                                    <option>3-wheeler</option>
+                                                    <option>4-wheeler</option>
+                                                    <option>other</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="fname" type="text" class="form-control" placeholder="Father's Name *" value=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="mobno" type="text" class="form-control" placeholder="Mobile No. *" value=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="paddress" type="text" class="form-control" placeholder="Permanent address *" value=""/>
+                                        </div>
+                                       
+                                        <div class="form-group">
+                                            <input name="pcity" type="text" class="form-control" placeholder="city * " value=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="ppincode" type="text" class="form-control" placeholder="pincode *" value=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+  <!------------------------------- vehicle details --------------------------------->
+
+                           
+                                <div class="well well-sm" style=" margin-top: 50px; margin-bottom: 50px;;" >
+                                    <center>Vechile Details</center>        
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="chasisno" type="text" class="form-control" placeholder="chasis no *" value="" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="ownership" required>
+                                                    <option disabled selected hidden value=""> -- Select Ownership--</option>
+                                                    <option>central government</option>
+                                                    <option>charitable trust</option>
+                                                    <option>Educational institute</option>
+                                                    <option>Driving training school</option>
+                                                    <option>State govt</option>
+                                                    <option>Individual</option>                                                   
+                                                    <option>other</option>
+                                               </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="vclass" required>
+                                                    <option disabled selected hidden value=""> -- Select Vechile class--</option>
+                                                    <option>Motorcycle</option>
+                                                    <option>Cars</option>
+                                                    <option>Buses</option> 
+                                                    <option>Three tier Rickshaw</option> 
+                                                    <option>Two axle-trucks</option> 
+                                                    <option>Three axle-trucks</option>
+                                                    <option>Four axle-trucks</option>
+                                                    <option>other</option>       
+                                               </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="btype" required>
+                                                    <option disabled selected hidden value=""> -- Select Body type--</option>
+                                                    <option>Motorcycle(private)</option>
+                                                    <option>jeep</option>
+                                                    <option>Sedan</option>
+                                                    <option>HatchBack</option>
+                                                    <option>MUV/SUV</option>
+                                                    <option>Flat Bed(truck)</option>
+                                                    <option>Contractor Body(truck)</option>
+                                                    <option>Dump Body</option>
+                                                    <option>None</option>
+                                                    <option>other</option>       
+                                               </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="maker" required>
+                                                    <option disabled selected hidden value=""> --Select Maker--</option>
+                                                    <option>Toyota</option>
+                                                    <option>Honda city</option>
+                                                    <option>Hyundai</option>
+                                                    <option>Hindustan Motors</option>
+                                                    <option>Hero Motors</option>
+                                                    <option>Skoda</option>
+                                                    <option>Suzuki</option>
+                                                    <option>other</option>       
+                                               </select>
+                                        </div>
+                                        <div class="form-group">
+                                             <label for="date">Manufacturer date:  </label>
+                                            <input name="mdate" type="date" class="form-control" value="" required style=" max-width: 220px;">
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="engineno" type="text" class="form-control" placeholder="Engine No *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="vtype" required>
+                                                    <option disabled selected hidden value=""> --Select Vehicle type--</option>
+                                                    <option>Transport</option>
+                                                    <option>Non-Transport</option>
+                                               </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="date">Purchase date:  </label>
+                                            <input name="pdate" type="date" class="form-control" value="" required style=" max-width: 220px;">
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="saleamount" type="text"  placeholder="Enter sale amount" class="form-control" value="" required>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+  
+                                
+ <!------------------------------- insurance details ---------------------------------> 
+
+
+  
+                                <div class="well well-sm" style=" margin-top: 30px; margin-bottom: 50px;;" >
+                                    <center>Insurance Details</center>        
+                                </div>
+ 
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <select class="form-control" name="icompany" required>
+                                                    <option value="" disabled selected hidden> --Select Insurance company--</option>
+                                                    <option>Bajaj Allianz</option>
+                                                    <option>The Oriental Insurance</option>
+                                                    <option>The New India Assurance </option>
+                                                    <option>HDFC ERGO </option>
+                                                    <option>AIG General Insurance</option>
+                                                    <option>HDFC</option>
+                                                    <option>other</option>
+                                            </select>                                                    
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input name="coverno" type="text" class="form-control" placeholder=" Enter Cover No *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="itype" required>
+                                                    <option value="" disabled selected hidden> --Select Insurance type--</option>
+                                                    <option>Comprehensive</option>
+                                                    <option >Theft and third party</option>
+                                                    <option >Third party</option>
+                                                    <option >other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="date">From:  </label>
+                                            <input name="istart" type="date" class="form-control" required value="" style=" max-width: 220px;">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="date">To:  </label>
+                                            <input name="iend" type="date" class="form-control" value="" required style=" max-width: 220px;">
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                          
+                                
+                                
+                                <center><button type="submit" class="btnSubmit">Save & Submit</button></center>
+                            </div>
+                        </div>
+                    
+                    </form>
+                    
+                </div>
+              </div>
+        </div>
+    </body>
+</html>
+
